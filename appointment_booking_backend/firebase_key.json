@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "student-teacher-appt-booking",
+  "private_key_id": "86b96694b0a1852916aa6253b694cec118a8d4e7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDuBiDvx2orzdoX\n4XxpVqX4254fb4PADiMFKz10X6zkdP65q/+b9Fna2yi6lb2vx02oseca6Pu0YoBM\nnZhbG21OUIoU3YQIbQVgvbUv4slldHvVHtSoLh50ScfUckUKlkTusPqyk0xOkKvc\nZczAbIGcFIXIqgyIidMAQWPowWuvPqmOKLAzkyFo0dIZUfjRxQqVSYsda055mgd/\n6a8ofbOS8C4SxVX1wdyQ3+d8KLsEHkw13zW+WSHhFx/tQBgbBtErNJoxzGeKfVng\ny2CXeroHMnqd02JmJVB99kL9jBtflG7RMBN+BEJx4rgVjo/iG100ka+PDrlWEdBk\n/yqJ+OXbAgMBAAECggEAFd6+9KkoVTazMlHdQjncQtMTDU+2wFUhh0kOJXzhAEDL\nuDhYjSDU3L9vAkMzTE0OEqZTVhf61fvdpAHa94wRQrUzFXBhFaZxbGPMm8YaZoBf\nHG7vxTWE8NRn+wTg2R8uMuxUrJx3fMSINgEDNi8CHbA5C/4BQXkVx8aPrS7l0RJ4\ngc8IrwSFpvsJcqJ5DxSw4toyGO84lhVIpJdJ/BH1QXPka93VFTgo5AgJ4VNNKR04\ns/LeMPO3259geUHpGCM4b5aKcmX+nGcz0yYeTrKvuX9oFp1YB6O8OKAG34gCoCsW\nllxxMK4pNuJLUQRDa6BlOZ8OUvg/066WCvq1sqUvKQKBgQD8FIyWkd/4g6iwc8Pd\n6aCsrvri7UN0sKw+Kjpx4vr15MVJzNinB0L47qoAM/FExHVbbSsJ+/C1Vns0kuHZ\nU7KcZXZrHzouMjuM2nnVI/qj8GwAC/W9UW4ESmqyA2gEalpam3WBeVsNj1vS+eEN\nZ0s9gZHGV0maxut7xaLZNbvuRQKBgQDxuaAwVNsNFZiq74RllDBxIo8fi5oh3C28\n5dl5En9TdwzP2UdLj+Eh5KIeCahtUUIfio27rI9cJS1IKRt/sbRnNyBfo6n5apow\nsFv/a7E96nw2NS7U7E9mxVrPluRT1ENUL+573Rg6IFHF+avDIfuFmj67zG2izmuK\nG7x7Y0dVnwKBgFfwl0cj5r2cuKmuCSOOkGYNuSqXWRQJWl1pf/AhHinQQF9Jnj9O\n0jdjk1z0wfOakdJuWDhocwXgAKVLpIybnVDgOJqQT0y0a3/s69nGbnbotdSiV31P\nPhEzINuvQodfztuTJkAf5PrrCz6ju7ZgVahEXmWSJ/Rd9uK8BN6/1yr9AoGAHJH2\nDwBYi6lbzAhXO7JSL20IQZA8fXgKp+L620aGahUOHJrvxEyTLXBagPZfQ9xw1k2I\nBwCUSS3Ttk21hFg6nGB1oRg1BNfGta6CkSPnZQwL9lQ+3se3cswsuZB6GDZkZtTr\neRRewrADOkUSOhQQKHBcrdGxu6ZuK3qvwl2vlr0CgYB9yYlJ6U/PYtiyNJfpMtF1\nhQRWb6YSlNLXhJEdJYPNh6nc/3eO3HcX5R774anaTIHjJOAtX5Tv6hRlfuxJjU7i\npIWamk6x/L+y5K+RAkKwbHwzKHDmnmPCs5sdRdlBbW+l5s7p8TmbDzBi+SlYtJRq\nAQYDLk/X0m8fbUdVwp9iYQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@student-teacher-appt-booking.iam.gserviceaccount.com",
+  "client_id": "101576992351772224029",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40student-teacher-appt-booking.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
