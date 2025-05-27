@@ -37,11 +37,17 @@ def user_login(email, password):
             return JsonResponse({'error': 'Invalid credentials'}, status=401)
 
         res_data = response.json()
+
+        db = firestore.client()
+        query = db.collection("users").where("email", "==", email).limit(1)
+        results = query.get()
+        data = results[0].to_dict()
         return JsonResponse({
             'message': 'Login successful',
             'user_id': res_data['localId'],
             'token': res_data['idToken'],
-            'email': res_data['email']
+            'email': res_data['email'],
+            'category': data['category']
         }, status=200)
 
     except requests.exceptions.RequestException as e:
