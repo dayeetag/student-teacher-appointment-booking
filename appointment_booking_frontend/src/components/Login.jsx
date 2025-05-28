@@ -10,7 +10,7 @@ const Login = ({ onLogin }) => {
         setError("");
 
         try {
-            const res = await fetch("http://127.0.0.1:8000/students/login/", {
+            const res = await fetch("http://127.0.0.1:8000/adminapp/login/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password }),
@@ -37,7 +37,6 @@ const Login = ({ onLogin }) => {
             <button onClick={handleLogin}>Login</button>
             {error && <p style={{ color: "red" }}>{error}</p>}
             <p><Link to="/student-registration/">Register as a Student</Link></p>
-            <p><Link to="/admin-login/">Login as Admin</Link></p>
         </div>
     );
 };
