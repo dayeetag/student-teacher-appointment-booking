@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Login from "./components/Login";
-import AdminLogin from "./components/Admin/AdminLogin";
 import StudentDashboard from "./components/StudentDashboard/StudentDashboard";
 import TeacherDashboard from "./components/TeacherDashboard/TeacherDashboard";
 import PrivateRoute from "./components/PrivateRoute";
@@ -22,8 +21,7 @@ const AppRoutes = ({ user, setUser }) => {
     return (
         <Routes>
             <Route path="/" element={<Login onLogin={setUser} />} />
-            <Route path="/admin-login/" element={<AdminLogin onLogin={setUser} />} />
-            <Route path="/student-registration/" element={<AdminLogin onLogin={setUser} />} />
+            <Route path="/student-registration/" element={<StudentDashboard user={user} onLogout={() => setUser(null)} />} />
             
             <Route
                 path="/student/*"

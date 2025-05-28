@@ -5,7 +5,18 @@ from django.http import JsonResponse
 from students.models import StudentSignupRequest
 from firebase_admin import auth, firestore
 from django.views.decorators.csrf import csrf_exempt
-from core.firebase_utils import get_firestore_user_by_email, get_firestore_users
+from core.firebase_utils import get_firestore_user_by_email, get_firestore_users, user_login
+
+# POST api for user login
+@csrf_exempt
+def user_login_api(request):
+    if request.method != "POST":
+        return JsonResponse({'error': 'Only POST allowed'}, status=405)
+    
+    data = json.loads(request.body)
+    email = data.get("email")
+    password = data.get("password")
+    return user_login(email, password)
 
 # GET api to get all pending student sign-up requests
 @csrf_exempt

@@ -3,7 +3,6 @@ import json
 from django.http import JsonResponse
 from .models import StudentSignupRequest
 from django.views.decorators.csrf import csrf_exempt
-from core.firebase_utils import user_login
 
 @csrf_exempt
 def signup_request(request):
@@ -28,13 +27,5 @@ def signup_request(request):
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
     
-@csrf_exempt
-def student_login(request):
-    if request.method != "POST":
-        return JsonResponse({'error': 'Only POST allowed'}, status=405)
-    
-    data = json.loads(request.body)
-    email = data.get("email")
-    password = data.get("password")
-    return user_login(email, password)
+
     
