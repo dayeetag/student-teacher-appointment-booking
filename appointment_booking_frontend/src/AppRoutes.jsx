@@ -21,7 +21,6 @@ const AppRoutes = ({ user, setUser }) => {
     return (
         <Routes>
             <Route path="/" element={<Login onLogin={setUser} />} />
-            <Route path="/student-registration/" element={<StudentDashboard user={user} onLogout={() => setUser(null)} />} />
             
             <Route
                 path="/student/*"
