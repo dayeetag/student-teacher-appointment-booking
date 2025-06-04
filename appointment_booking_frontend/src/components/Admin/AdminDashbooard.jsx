@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import StudentRegistration from "./StudentRegistration";
 import TeacherDetails from "./TeacherDetails";
 import AddTeacher from "./AddTeacher";
@@ -9,7 +9,7 @@ const componentMap = {
     AddTeacher: AddTeacher
 };
 
-const AdminDashboard = ({user, onLogout}) => {
+const AdminDashboard = ({onLogout}) => {
     const [componentName, setComponentName] = useState("StudentRegistration");
     const ComponentToRender = componentMap[componentName];
 

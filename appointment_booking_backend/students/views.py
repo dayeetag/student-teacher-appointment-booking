@@ -71,7 +71,7 @@ def appointment_request(request):
             "approved": "pending"
         })
 
-        return JsonResponse({'success': True, 'message': 'Appointment created successfully'})
+        return JsonResponse({'success': True, 'message': 'Appointment request created successfully'})
 
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
