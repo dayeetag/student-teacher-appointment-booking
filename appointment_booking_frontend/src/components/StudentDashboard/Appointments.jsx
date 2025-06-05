@@ -59,7 +59,11 @@ const Appointments = ({ user }) => {
                             return (
                                 <tr key={a.email} className={i % 2 !== 0 ? 'bg-gray-100' : ''}>
                                     <td className="p-2">{a.teacher}</td>
-                                    <td className="p-2">{a.appt_date}</td>
+                                    <td className="p-2">{new Date(a.appt_date).toLocaleString("en-US", {
+                                        year: "numeric",
+                                        month: "short",
+                                        day: "2-digit",
+                                    })}</td>
                                     <td className="p-2">{a.message}</td>
                                 </tr>
                             )
@@ -83,7 +87,11 @@ const Appointments = ({ user }) => {
                             return (
                                 <tr key={a.email} className={i % 2 !== 0 ? 'bg-gray-100' : ''}>
                                     <td className="p-2">{a.teacher}</td>
-                                    <td className="p-2">{a.appt_date}</td>
+                                    <td className="p-2">{new Date(a.appt_date).toLocaleString("en-US", {
+                                        year: "numeric",
+                                        month: "short",
+                                        day: "2-digit",
+                                    })}</td>
                                     <td className="p-2">{a.message}</td>
                                 </tr>
                             )
